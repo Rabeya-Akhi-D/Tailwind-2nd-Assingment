@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <h1 class="bg-green-700">hello</h1>
+    <section>
+        <nav class="bg-white md:flex-row flex-col left-0 md:gap-4 md:items-center left-0 top-[9%] md:w-auto w-full shadow-sm flex items-center justify-between mt-2 mb-4 px-5 py-3">
+            
+                <div>
+                    <img src="images/c4u full logo_2022 1 (2).png">
+                </div>
+            <div>
+                <ul class="md:flex gap-5">
+                    <li>Home</li>
+                    <li class="text-red-500">About Us</li>
+                    <li>Upskill</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="flex gap-2">
+                <button class="text-white bg-red-600 md:p-2 p-0  hover:bg-slate-700 translate-x-2 transition scale-105 border rounded-lg cursor-pointer">Register Interest</button>
+                <div id="switch">
+                    
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-4xl cursor-pointer md:hidden"></ion-icon>
+                
+                </div>
+               
+            </div>
+        </nav>
+
+
+    </section>
+    <script>
+        const navLinks= document.querySelector('nav-Links')
+        function onToggleMenu(e){
+           e.name = e.name === 'menu' ? 'close' :'menu'
+           nav-Links.classList.toggle("top-[9%]")
+        }
+    </script>
 </body>
 </html>
