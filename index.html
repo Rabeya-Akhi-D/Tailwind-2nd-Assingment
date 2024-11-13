@@ -42,7 +42,7 @@
 <div class="text-center items-center container py-36">
   <p class="text-5xl font-bold text-center items-cente gap-4">Connecting <span class="text-red-700 underline underline-offset-4">talent</span> to <br>opportunity through <span class="text-red-700 underline underline-offset-4">skills</span></p>
   <p class="mt-6">We forster a skill-focussed environment enabling students to navigate their career with <br> their self-paced learning journey and businesses to gain market-ready talent. </p>
-  <button class="bg-white text-red-500 px-8 py-2 mt-6 font-bold border rounded-full hover:bg-gray-700 transition-all translate-x-4">Ask question</button>
+  <button class="bg-white text-red-500 px-8 py-2 mt-6 font-bold border rounded-full hover:bg-gray-700 transition-all translate-x-4 animate-pulse">Ask question</button>
 
 </div>
 
@@ -53,7 +53,7 @@
         <div class="flex items-center shadow-md px-4">
             <p class="font-bold text-3xl text-gray-700 px-20 py-10">At <span class="text-red-500 underline underline-offset-4">C4U</span>,<br>
                 We Empower: </p>
-                <div class="md:flex space-x-6 mt-8">
+                <div class="md:flex space-x-6 mt-8 transition-all animate-pulse">
                     <img src="images/Frame 6.png" alt="">
                     <img src="images/Frame 7.png" alt="">
                     <img src="images/Frame 8.png" alt="">
@@ -66,12 +66,13 @@
             <p class="text-red-500 text-balance mt-3">About Us</p>
             <h2 class="text-2xl font-semibold mt-3">Our Mission </h2>
             <p class="mt-5">To create a personalised  pathway for continuous learning <br>and transferrable skills development.</p>
-            <div class="flex">
+            <div class="flex mt-16 px-6 font-semibold py-1">
                
            
-                <button class="mt-16 px-6 font-semibold py-1 text-red-500 border border-red-700 rounded-full">Find Out More</button>
-                <img class="h-3 w-3 mt-10 items-center ml-3" src="images/Icon.png" alt="">
-                
+                <button class="mt-16  gap-2 hover:bg-slate-700 transition-all flex px-6 font-semibold py-1 text-red-500 border border-red-700 rounded-full">Find Out More
+                  <img class="h-3 w-3 mt-2 animate-ping transition" src="images/Icon.png" alt="">
+                </button>
+               
             </div>
             <div class="mt-48 px-10 mb-16">
                 <img src="images/Right.png" alt="">
@@ -90,9 +91,11 @@
             <p class="mt-48 text-red-500">About us</p>
             <h2 class="text-2xl font-semibold mt-3">Our Mission </h2>
             <p class="mt-5">To have a globally recognised strategic bridge <br> between education and the job market</p>
-            <button class="mt-16 px-6 font-semibold py-1 text-red-500 border border-red-700 rounded-full">Contact Us</button>
-            <img class="h-3 w-3 mt-16 items-center ml-3" src="images/Icon.png" alt="">
+            <button class="mt-16 px-6 font-semibold py-1 text-red-500 border border-red-700 rounded-full flex gap-2 hover:bg-slate-700">Contact Us 
+              <img class="h-3 w-3 mt-2 items-center ml-3 animate-ping transition" src="images/Icon.png" alt="">
 
+            </button>
+           
                 </div>
      </section>
      <!-- Discover section -->
@@ -220,7 +223,7 @@
             
           
           <!-- Copyright -->
-          <div class="mt-8 text-center text-gray-500 text-sm">
+          <div class="mt-8 text-center bg-slate-500 h-6 w-full text-white text-sm">
             &copy; 2022 Creatives For You LTD
           </div>
         </div>
@@ -228,12 +231,14 @@
       
        
    
-    <script>
-        const navLinks= document.querySelector('nav-Links')
-        function onToggleMenu(e){
-           e.name = e.name === 'menu' ? 'close' :'menu'
-           nav-Links.classList.toggle("top-[9%]")
-        }
-    </script>
+      <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js">
+      </script>
+     <script>
+         function onToggleMenu(e){
+             const navlinks = document.querySelector('.nav-links')
+             e.name = e.name ==='menu' ? 'close' : 'menu'
+             navlinks.classList.toggle('top-[0%]')
+          }
+     </script>
 </body>
 </html>
